@@ -1,0 +1,117 @@
+/* common */
+html,
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  max-width: 1280px;
+  margin: auto;
+}
+
+/* header area */
+.header-main {
+  position: relative;
+  text-align: left;
+  color: #fff;
+  height: 700px;
+  width: 100%;
+  background-color: #161616;
+  border-radius: 30px;
+}
+
+.header-main h1 {
+  font-size: 50px;
+}
+
+.header-main p {
+  margin-bottom: 33.5px;
+  font-size: 18px;
+}
+
+.banner-text-area {
+  left: 150px;
+  width: 40%;
+  padding-top: 150px;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+}
+
+.banner-image {
+  padding-top: 75px;
+  width: 60%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.banner-image img {
+  width: 100%;
+}
+
+.btn-main {
+  font-size: 16px;
+  font-weight: 600;
+  padding: 20px 32px;
+  margin-top: 10px;
+  text-decoration: none;
+  border: 1px solid #ffd803;
+  background: #ffd803;
+  color: #141414;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+/* medium devices */
+@media (min-width: 768px) and (max-width: 1279px) {
+  .header-main {
+    height: 500px;
+  }
+  .banner-image {
+    width: 60%;
+  }
+  .banner-text-area {
+    padding-top: 50px;
+    width: 40%;
+    left: 75px;
+  }
+}
+
+/* tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .header-main h1 {
+    font-size: 35px;
+  }
+  .banner-image {
+    width: 75%;
+  }
+  .banner-text-area {
+    padding-top: 75px;
+  }
+  .btn-main {
+    padding: 16px 25px;
+  }
+}
+
+@media (max-width: 767px) {
+  .banner-text-area {
+    width: 100%;
+    position: relative;
+    left: 0;
+    top: 0;
+    text-align: center;
+    padding-top: 33.5px;
+  }
+
+  .banner-image {
+    width: 100%;
+    padding-top: 33.5px;
+    position: relative;
+    left: 0;
+  }
+
+  .header-main {
+    height: auto;
+  }
+}
