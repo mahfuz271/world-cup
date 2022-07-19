@@ -8,9 +8,17 @@ body {
   max-width: 1280px;
   margin: auto;
 }
-
+@keyframes zoom-in {
+  from {
+    transform: scale(1, 1);
+  }
+  to {
+    transform: scale(1.1, 1.1);
+  }
+}
 /* header area */
 .header-main {
+  overflow: hidden;
   position: relative;
   text-align: left;
   color: #fff;
@@ -50,6 +58,9 @@ body {
   width: 100%;
 }
 
+.banner-image img:hover {
+  animation: zoom-in 2s ease-in-out;
+}
 .btn-main {
   font-size: 16px;
   font-weight: 600;
