@@ -162,8 +162,6 @@ main {
 }
 
 /* footer area  */
-
-/* responsive */
 footer {
   background-color: #161616;
   padding-top: 100px;
@@ -195,6 +193,22 @@ footer ul li a {
 ul.social {
   display: none;
 }
+
+/* upcoming match page  */
+.match {
+  padding-bottom: 35px;
+  text-align: center;
+}
+.match .thumb {
+  display: grid;
+  grid-template-columns: 1fr 20% 1fr;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 50px;
+  align-items: center;
+}
+
+/* responsive */
 /* medium device header resize */
 @media (min-width: 768px) and (max-width: 1279px) {
   .header-main {
