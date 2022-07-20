@@ -276,7 +276,14 @@ ul.social {
   .header-main {
     height: auto;
   }
-
+  .header-main p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 33.5px;
+  }
   .sidebar {
     background-color: transparent;
   }
